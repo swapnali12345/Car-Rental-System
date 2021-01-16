@@ -6,55 +6,41 @@ Abstract—Nowadays travel by car is on increase and people do that by renting c
 Keywords—Car Rental System; Online; Management Information system
 
 I.	INTRODUCTION
-With the advances in car rental industry it is very important to have a Management Information Systems (MIS) [1] that can efficiently work on car rentals. It will serve the purpose as two-fold one for customers that can easily rent car online without the need to be physically present at the business location as well as for business managers that can easily update inventory, track current car rentals, generate reports and for viewing feedback as well as for other business operations. In this project we provide an online car rental system which is a web-based system for renting out cars and allowing customers to make online reservations about their services. This system will make sure the transactions are carried out digitally and stored in databases thus minimizing human error. New system is efficient in providing payment and management information via online devices from anywhere across the world and it also monitors transactions and information of customers in a more transparent way.
+With the advances in car rental industry it is very important to have a Management Information Systems (MIS) that can efficiently work on car rentals. It will serve the purpose as two-fold one for customers that can easily rent car online without the need to be physically present at the business location as well as for business managers that can easily update inventory, track current car rentals, generate reports and for viewing feedback as well as for other business operations. In this project we provide an online car rental system which is a web-based system for renting out cars and allowing customers to make online reservations about their services. This system will make sure the transactions are carried out digitally and stored in databases thus minimizing human error. New system is efficient in providing payment and management information via online devices from anywhere across the world and it also monitors transactions and information of customers in a more transparent way.
 
 II.	BACKGROUND
 Currently it can be seen that many customers do visit car rental business locations for scheduling and booking car rentals or calling by phone. This is time consuming and involves more cost accumulation for customers as well as businesses as they need to manually store the details, print physical copy of receipts as well as for other operations. This points us to create an online car rental system that is more efficient, accessible, user friendly which in turn can save money for customers as well as for business. The proposal for the new system is such that 
 •	The new system is totally online and computerized system. 
 •	The new system should provide features like car details, reservation, pdf receipts, user profiles and feedback to the business.
 •	This system provides reporting capabilities for business managers. 
-III.	METHODOLOGY
-The method to build the car rental system was followed in Six stages as shown in Fig.1. Six phase development methodology approach is very beneficial and it helps to keep the process streamlined and avoid any redundancy costs [2]. 
 
+III.	METHODOLOGY
+The method to build the car rental system was followed in Six stages.Six phase development methodology approach is very beneficial and it helps to keep the process streamlined and avoid any redundancy costs. 
  
-Fig. 1.	Stages of development cycle
 A.	Planning
 The first phase of this project is planning which is regarded as very important stage. Based on the background research we know the current issues that car rental industry suffers from which is the core problem. The plan is to provide an online car rental system designed especially for small, large and premium car rental business. The car rental system should provide complete functionality of listing and booking a car.
-B.	Analysis
-Based on the proposed plan data analysis was needed. We looked up the open source databases available and found one on Kaggle [3]. This data set contains car features and includes information such as make, model, year, category and many more other information etc.
 
-Current process 	Proposed system	Result
-Manual bookkeeping process for registration	Online car rental application to reserve and book car rentals	Reservation and data stored in a centralized database 
-Calculation done manually for charges and cost calculation	Car rental system automictically calculates cost and generates pdf receipts	Efficient time and less error prone calculation and automatic receipts
-Manual look up for customer transaction and history	Admin can view reports, transaction history online	Business can view reports and efficient decision taking.
-Table. 1. Proposed system analysis 
+B.	Analysis
+Based on the proposed plan data analysis was needed. We looked up the open source databases available and found one on Kaggle. This data set contains car features and includes information such as make, model, year, category and many more other information etc.
+
 C.	Design
 For this project several design studies were done and they are helpful in implementation and other phase
 
-1) Data Flow Diagram (DFD): Data Flow Diagram represent various modules and the flow of data needed in the project. As can be seen in Fig. 2 modules are Booking management, Customer management, System User management, Car management, Payment management Login management
-
+1) Data Flow Diagram (DFD): Data Flow Diagram represent various modules and the flow of data needed in the project. As can be seen modules are Booking management, Customer management, System User management, Car management, Payment management Login management
  
-Fig. 2.	Data Flow Diagram
-2) ER Diagram: Entity–relationship Model describes the structure of a database with the help of a diagram, which is known as Entity Relationship Diagram (ERD)[4]. An ER model is a design or blueprint of a database that can later be implemented as a database. As can be seen that for our car rental system we have two main users of system Admin and User. For our database implementation we have various attributes as can be seen in Fig.3. For customers we have various attributes like username, password, first name, last name, phone etc. We have various relationship like User creating accounting, exploring cars making reservation and giving feedback. Admin can attend users and receive feedback and view various reports.
+2) ER Diagram: Entity–relationship Model describes the structure of a database with the help of a diagram, which is known as Entity Relationship Diagram (ERD). An ER model is a design or blueprint of a database that can later be implemented as a database. As can be seen that for our car rental system we have two main users of system Admin and User. For our database implementation we have various attributes. For customers we have various attributes like username, password, first name, last name, phone etc. We have various relationship like User creating accounting, exploring cars making reservation and giving feedback. Admin can attend users and receive feedback and view various reports.
 
+3) System Flowcharts: This flowchart outlines the flow of data and information for our car rental system. We have two main flowcharts one for Admin which is used to add car details, update information, generate reports, manage inventory etc. and other is for Users who can create new accounts, rent a car, make payments, manage bookings and view billing pdf receipts. 
 
-Fig. 3.	Entity Relationship Diagram
-
-3) System Flowcharts: This flowchart outlines the flow of data and information for our car rental system. As can be seen in Fig.4 we have two main flowcharts one for Admin which is used to add car details, update information, generate reports, manage inventory etc. and other is for Users who can create new accounts, rent a car, make payments, manage bookings and view billing pdf receipts. 
-
- 
-Fig. 4.	System Flowcharts
 D.	Implementation
 The next phase is the implementation. Based on research we have found HTML/CSS/PHP to be the best combination of front-end programming language and MySQL as database. 
 •	PHP: PHP is a popular general-purpose scripting language that is especially suited to web development. PHP application can be run on various platforms. A quick loading website is always appreciated by many individuals. PHP makes it possible to quickly load website and fetch data from server databases.
 •	MySQL: We have used MySQL database because of various advantages. MySQL is renowned for being the most secure and reliable database management system used in popular web applications. MySQL features a distinct storage-engine framework that facilitates system administrators to configure the MySQL database server for a flawless performance. MySQL provides features like complete atomic, consistent, isolated, durable transaction support; multi-version transaction support; and unrestricted row-level locking.
 The project deals with various implementation of modules as follows:
 
-1)Home Page: The Homepage is the default page of our car rental system. As we can see in Fig.5. we have a central top Navbar and on left side we do have a sign up and login hyperlinks.  New User needs to create a new accout by sign up page and if he has an account he can just login. Explore pge shows the availability of cars that can be selected and Reserve page enables a user to book a car. Admin can also login to the system by homepage and they can view the transaction history and reports.
+1)Home Page: The Homepage is the default page of our car rental system. We have a central top Navbar and on left side we do have a sign up and login hyperlinks.  New User needs to create a new accout by sign up page and if he has an account he can just login. Explore pge shows the availability of cars that can be selected and Reserve page enables a user to book a car. Admin can also login to the system by homepage and they can view the transaction history and reports.
  
-Fig. 5.	Home Page User Interface
-
-2)NavBar: The navbar is the main display bar that has hyperlinks for various other webpages as can be seen in Fig.5.
+2)NavBar: The navbar is the main display bar that has hyperlinks for various other webpages.
 The implementation code for is as follows this is same used across all pages.
 
 <div class="collapse navbar-collapse" id="myNavbar">
@@ -65,13 +51,8 @@ The implementation code for is as follows this is same used across all pages.
         <li><a href="contact.php">Contact</a></li>
     </ul>
 
-3)Account Creation:New Users need to create account by signup page as shown in Fig.6.
+3)Account Creation:New Users need to create account by signup page.
 
-
- 
-
-
-Fig. 6.	SignUp Page User Interface
 Using input tag the customer information is stored and passed on to the database as can be seen a the code for storage of first name and last name.
 
 <!-- First Name -->
@@ -96,20 +77,13 @@ Using input tag the customer information is stored and passed on to the database
     </div>
 </div>
 
-4)Reservation:Car information is displayed in explore page and User can see the car that are available and based on that user can reserve the car. Example of the car reservation is shown in fig.7 
+4)Reservation:Car information is displayed in explore page and User can see the car that are available and based on that user can reserve the car.
 
- 
-Fig. 7.	Reservation Page User Interface
+5)PDF Recipt: To make a successful reservation credit card information is required. we have used an javascript validation library to validate the credit card information. After that pdf receipt is generated we have used a TCPDF library which is a vastly used open source PHP library for generating PDF documents.
 
-5)PDF Recipt: To make a successful reservation credit card information is required. we have used an javascript validation library to validate the credit card information. After that pdf receipt is generated we have used a TCPDF library which is a vastly used open source PHP library for generating PDF documents[5]. Credit car information is as in Fig. 8 and pdf generates is as in Fig. 9.
+6)Feedback: After a sucessful rental by a user he has the option to give feedback to the business and the business manager can view the feedback to see if any changes are required in business operations. The feedback also provides a custom test box for user comments.
  
-Fig. 8.	Credit Card User Interface
- 
-Fig. 9.	PDF receipt generation
-6)Feedback: After a sucessful rental by a user he has the option to give feedback to the business and the business manager can view the feedback to see if any changes are required in business operations. As can be seen in Fig. 10 the feedback also provides a custom test box for user comments.
 
- 
-Fig. 10.	Feedback User Interface.
 Database implementation: Based on the ERD diagram the car rental sytem will need various tables created for proper working. They are as follows
 Customers:
 •	 Customer ID, name, address, DOB, email, license number are entered in front end form and stored.
@@ -127,15 +101,6 @@ Transaction:
 E.	Testing
 Before the system is launched the program should be free from errors. We need this type of tests to validate car rental system works correctly and is error free.
 
-Table.2	Test Case Results
-
-No	Test	Outcome	Result
-1	Account creation	User was able to create a new account	Passed
-2	Login	Username and Passwords allows login 	Passed
-3	Input and delete Rental History Data	Rental History data successfully stored into database and deleted 	Passed
-4	After reservation bill generated	PDF bill receipt generated	Passed
-5	Feedback entered	Feedback stored in database	Passed
-6	Logout	System is logged off	Passed
 
 F.	Maintenance
 Online car rental system is easy to maintain. We use MySQL database that is easy to maintain because of ACID properties and will keep data safe.
@@ -145,18 +110,14 @@ After the online car rental system is deployed, we can see successful results an
 
 1.Customer: We can see successful customer transactions created on database. Each customer is assigned a unique Customer ID as well as we store name, address, DOB, email, license and password.
 
- 
-Fig. 11.	Customer transactions
 
 2.Reservation: We can see successful reservation transactions created on database. The total amount is calculated and stored in as well as other details like date range, vin and customer id
 
- 
-Fig. 12.	Reservation transactions
 3.Admin Reports: We can see the reporting functionality correctly working and we have different reports based on type of card as well as detail reports that show the transactions.
 
  
-Fig. 13.	Admin Reports
 V.	CONCLUSION
 With online car rental system, it will help to improve the time efficiency of booking and renting the car. Users from anywhere can view and book a car. The online car rental system will save lot of costs and money by getting rid of paper transactions as everything is stored in Database as well as online PDF receipts. We can see minimal errors as everything is computerized and online. Thus, to conclude Online car rental system provides a good opportunity for businesses to go paperless saving costs, time and money.
+
 VI.	FUTURE WORK
 The existing system can be expanded to create Android app that everyone prefers nowadays. The car rental system can be expanded to include Rewards/Loyalty points such as to increase the customers. Small companies should make use of this system to publish their services in a wide range and help the company to manage their service more effectively.
